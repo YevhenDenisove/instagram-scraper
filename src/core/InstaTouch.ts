@@ -304,7 +304,7 @@ export class InstaTouch {
     /**
      * Starting point
      */
-    public async startScraper(): Promise<Result | any> {
+    public async startScraper(): Promise<Result | any> {   
         if (this.cli && !this.bulk) {
             this.spinner.start();
         }

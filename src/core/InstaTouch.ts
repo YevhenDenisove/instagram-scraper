@@ -369,7 +369,7 @@ export class InstaTouch {
     /**
      * Get file destination(csv, zip, json)
      */
-    private get fileDestination(): string {
+    private get fileDestination(): string {                   
         if (this.fileName) {
             return this.filepath ? `${this.filepath}/${this.fileName}` : this.fileName;
         }

@@ -217,7 +217,7 @@ export class InstaTouch {
      * Main request method
      * @param param0
      */
-    private request<T>({ uri, method, qs, body, form, headers, json, gzip }: OptionsWithUri): Promise<T> {
+    private request<T>({ uri, method, qs, body, form, headers, json, gzip }: OptionsWithUri): Promise<T> {     
         return new Promise(async (resolve, reject) => {
             const proxy = this.getProxy;
             const session = this.getSession;

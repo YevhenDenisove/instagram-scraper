@@ -203,7 +203,7 @@ export class InstaTouch {
     /**
      * Get session id
      */
-    private get getSession(): string {
+    private get getSession(): string {          
         if (Array.isArray(this.session) && this.session.length) {
             return this.session[Math.floor(Math.random() * this.session.length)];
         }
